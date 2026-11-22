@@ -1,0 +1,5 @@
+{:paths ["src" "test"]
+ :tasks {test {:doc  "Run the test suite with Babashka"
+               :task (do (require 'clojure.test 'clojure-git.core-test)
+                         (let [{:keys [fail error]} (clojure.test/run-tests 'clojure-git.core-test)]
+                           (System/exit (if (zero? (+ fail error)) 0 1))))}}}
