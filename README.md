@@ -17,10 +17,10 @@ Point at the folder on disk:
 {:deps {io.github.mroma82/clojure-git {:local/root "../clojure-git"}}}
 ```
 
-Or, once you push it to GitHub:
+Or straight from GitHub:
 
 ```clojure
-{:deps {io.github.mroma82/clojure-git {:git/tag "v0.1.0" :git/sha "<short-sha>"}}}
+{:deps {io.github.mroma82/clojure-git {:git/tag "v0.1.0" :git/sha "792e931"}}}
 ```
 
 ### Leiningen
